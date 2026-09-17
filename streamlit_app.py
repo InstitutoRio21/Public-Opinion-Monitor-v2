@@ -201,7 +201,7 @@ with tabs[0]:
 
         **Como navegar:**
         1. **Painel geral de acompanhamento** – distribuição das avaliações por área em um mês específico.
-        2. **Painel temporal** – evolução mensal das avaliações agrupadas em três categorias.
+        2. **Painel temporal** – evolução trimestral das avaliações agrupadas em três categorias.
         3. **Perfil da amostra** – composição sociodemográfica dos entrevistados.
         4. **Cruzamentos de variáveis** – crie tabelas e gráficos de frequência/percentual a partir de até três variáveis simultâneas.
         5. **Download da base** – visualize e baixe o banco de dados completo em CSV.
