@@ -244,7 +244,8 @@ percepção no período selecionado.
         fig = px.bar(counts, x="percent", y="Área", color="Avaliação", orientation="h", text_auto=".1f", labels={"percent": "%"}, category_orders={"Avaliação": ORDER_AVAL}, color_discrete_map=COLOR_MAP)
         fig.update_layout(barmode="stack", xaxis_title="Percentual", yaxis_title="Área", template="simple_white")
         fig.update_xaxes(range=[0, 100], ticksuffix="%")
-
+        fig.update_traces(hovertemplate="<b>%{y}</b><br>Percentual: %{x:.1f}%<extra></extra>")
+        
         st.plotly_chart(fig, use_container_width=True, key="grafico_painel_geral")
 
 with tabs[2]:
@@ -276,6 +277,7 @@ São exibidos três gráficos:
         fig = px.line(sub, x="Mês/Ano", y="percent", color="Área", markers=True, labels={"percent": "%", "Mês/Ano": "Mês"})
         fig.update_layout(yaxis_title="Percentual", xaxis_title="Mês/Ano", template="simple_white")
         fig.update_yaxes(range=[0, 100], ticksuffix="%")
+        fig.update_traces(hovertemplate="<b>%{fullData.name}</b><br>Percentual: %{y:.1f}%<extra></extra>")
 
         st.plotly_chart(fig, use_container_width=True, key=f"grafico_temporal_{cat}")
 
